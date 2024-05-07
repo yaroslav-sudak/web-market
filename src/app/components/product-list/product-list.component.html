@@ -1,0 +1,35 @@
+<div class="product-list">
+  <!-- TODO Product list -->
+  <ul>
+    <ng-container *ngFor="let product of products; index as i">
+      <li *ngIf="!((i == 3 && gridSize == 3) || (i >= 2 && gridSize == 2))">
+        <div
+          class="center"
+          
+        >
+          <div class="image">
+            <img
+              class="product-image"
+              [src]="product.imagePath"
+              [alt]="product.name"
+            />
+          </div>
+          <div class="name">{{ product.name }}</div>
+          <div class="rate">
+            <app-rate
+              [fontSize]="14"
+              [rate]="product.rate"
+              [maximum]="product.rateMaximum ? product.rateMaximum : 0"
+            ></app-rate>
+          </div>
+          <div class="price">
+            <app-price
+              [price]="product.price"
+              [discount]="product.discount ? product.discount : 0"
+            ></app-price>
+          </div>
+        </div>
+      </li>
+    </ng-container>
+  </ul>
+</div>

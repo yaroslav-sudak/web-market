@@ -1,0 +1,46 @@
+@import '../../../assets/scss/variables';
+.promotion {
+  background-color: $c-background-black;
+  justify-content: center;
+  color: $c-text-white;
+  font-size: 14px;
+  display: flex;
+  height: 38px;
+
+  &-wrapper {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1240px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.title {
+  font-weight: 500;
+
+  &-sign-up {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: $c-text-white;
+    font-weight: 600;
+  }
+}
+
+.close-button {
+  position: absolute;
+  background: none;
+	cursor: pointer;
+  display: flex;
+	border: none;
+  padding: 0;
+  right: 0;
+
+}
+
+.hidden {
+  transition: height 0.5s;
+  height: 0;
+}

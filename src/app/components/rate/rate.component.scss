@@ -1,0 +1,27 @@
+.rate {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.stars {
+  flex-direction: row;
+  margin-right: 12px;
+  display: flex;
+}
+
+.star {
+  margin-right: 5px;
+}
+
+.star:last-child {
+  margin-right: 0;
+}
+
+img {
+  height: 100%;
+}
+
+.score {
+  align-self: flex-end;
+}

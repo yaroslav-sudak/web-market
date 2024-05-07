@@ -1,0 +1,24 @@
+@import '../../../assets/scss/variables';
+
+.brands {
+  background-color: $c-background-black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 122px;
+}
+
+.brands-wrapper {
+  max-width: 1240px;
+  padding: 0 100px;
+  width: 100%;
+}
+
+ul {
+  justify-content: space-between;
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}

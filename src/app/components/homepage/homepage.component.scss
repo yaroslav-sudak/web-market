@@ -1,0 +1,8 @@
+@import '../../../assets/scss/variables';
+
+.line {
+  border-bottom: 1px solid $c-border-light-gray;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}

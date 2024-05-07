@@ -1,0 +1,19 @@
+<div [style.fontSize.px]="fontSize" class="price">
+  <!-- TODO Price -->
+  <span
+    [style.marginRight.px]="spaceSize"
+    *ngIf="discount > 0"
+    class="discounted-price currency"
+    >{{ price - (price * discount) / 100 }}</span
+  >
+  <span
+    [style.marginRight.px]="spaceSize"
+    class="original-price {{ discount > 0 ? 'disabled' : '' }} currency"
+  >{{ price }}
+  </span>
+  <span
+    [style.fontSize.px]="fontSize / 2"
+    *ngIf="discount > 0"
+    class="discount"
+  >-{{ discount }}%</span>
+</div>

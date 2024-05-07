@@ -1,0 +1,69 @@
+@import '../../../assets/scss/variables';
+
+ul {
+  grid-template-columns: repeat(4, 295px);
+  list-style-type: none;
+  grid-gap: 20px;
+  display: grid;
+  row-gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  background-color: $c-background-gray;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 298px;
+  display: flex;
+  width: 100%;
+}
+
+.product-image {
+  height: auto;
+  width: 100%;
+}
+
+.name {
+  font-family: $ff-text;
+  font-weight: 700;
+  margin-top: 18px;
+  font-size: 20px;
+}
+
+.rate {
+  margin-top: 10px;
+}
+
+.price {
+  margin-top: 13px;
+}
+
+@media (max-width: 1242px) {
+  ul {
+    grid-template-columns: repeat(3, 248px);
+  }
+
+  .image {
+    height: 252px;
+  }
+}
+
+@media (max-width: 782px) {
+  ul {
+    grid-template-columns: repeat(2, 198px);
+  }
+
+  .image {
+    height: 200px;
+  }
+}

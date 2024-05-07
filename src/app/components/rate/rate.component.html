@@ -1,0 +1,18 @@
+<div [style.fontSize.px]="fontSize" class="rate">
+  <!-- TODO Rating -->
+  <div [style.height.px]="fontSize + 4" class="stars">
+    <div
+      *ngFor="let star of fakeArray"
+      class="star"
+      [style.marginRight.px]="Math.round((fontSize - 9) / 2 + 1)"
+    >
+      <img src="assets/icons/rate/star.svg" />
+    </div>
+    <div *ngIf="rate % 1 != 0" class="star">
+      <img src="assets/icons/rate/half-star.svg" />
+    </div>
+  </div>
+  <div *ngIf="maximum > 0" class="score">
+    {{ rate.toFixed(1) }}/<span class="maximum">{{ maximum }}</span>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+@import "../../../assets/scss/variables";
+
+.header {
+  background-color: $c-background-white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 96px;
+  width: 100%;
+
+  &-wrapper {
+    justify-content: space-between;
+    padding: 0 100px 0;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1240px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-navigation {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  &-actions {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.logo {
+  margin-right: 41px;
+}
+
+.navigation {
+  margin-right: 40px;
+}
+
+.search {
+  margin-right: 40px;
+  position: relative;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  
+  &-icon {
+    transform: translateY(-50%);
+    position: absolute;
+    display: flex;
+    left: 16px;
+    top: 50%;
+  }
+  
+  &-text {
+    background-color: $c-background-light-gray;
+    align-content: center;
+    border-radius: 50px;
+    padding-left: 52px;
+    max-width: 524px;
+    min-width: 200px;
+    color: $c-text;
+    resize: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $c-text-light;
+    }
+  }
+}
+
+.icons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.icon {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+a {
+  display: flex;
+}

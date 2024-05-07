@@ -1,0 +1,16 @@
+<div class="homepage">
+  <app-banner></app-banner>
+  <app-brands></app-brands>
+  <app-new-arrivals
+    [products]="newArrivalsList"
+    [gridSize]="gridSize"
+  ></app-new-arrivals>
+  <div class="line"></div>
+  <app-top-selling
+    [products]="topSellingList"
+    [gridSize]="gridSize"
+  ></app-top-selling>
+  <app-style-search></app-style-search>
+  <app-comments></app-comments>
+  <app-footer></app-footer>
+</div>

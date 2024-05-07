@@ -1,0 +1,13 @@
+@import "../../../assets/scss/variables";
+
+.logo {
+  font-weight: bold;
+  font-size: 32px;
+  display: flex;
+}
+
+a {
+  font-family: $ff-title;
+  margin-top: -8px;
+  color: $c-black;
+}

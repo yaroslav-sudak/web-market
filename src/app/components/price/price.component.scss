@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.currency::before {
+  content: $currency;
+  margin-right: 0;
+}
+
+.price {
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.disabled {
+  text-decoration: line-through;
+  text-decoration-thickness: .05em;
+  color: $c-text-light;
+}
+
+.discount {
+  background-color: $c-red-background;
+  font-weight: 600;
+  border-radius: 62px;
+  color: $c-red;
+  padding: 6px 14px;
+}

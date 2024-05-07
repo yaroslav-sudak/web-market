@@ -1,0 +1,34 @@
+@import '../../../assets/scss/variables';
+.top-selling {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.top-selling-wrapper {
+  padding: 74px 100px 62px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1240px;
+  display: flex;
+  width: 100%;
+}
+
+.title {
+  font-family: $ff-title;
+  font-size: 48px;
+}
+
+.product-list {
+  justify-content: center;
+  margin-top: 55px;
+  display: flex;
+  width: 100%;
+}
+
+.button {
+  margin-top: 36px;
+  max-width: 218px;
+  width: 100%;
+}

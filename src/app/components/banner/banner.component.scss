@@ -1,0 +1,97 @@
+@import "../../../assets/scss/variables";
+
+.banner {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-wrapper {
+  flex-direction: column;
+  padding: 85px 100px 117px;
+  position: relative;
+  max-width: 1240px;
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  max-width: 596px;
+}
+
+.title {
+  font-family: $ff-title;
+  margin-bottom: 26px;
+  line-height: 64px;
+  font-size: 64px;
+}
+
+.subtitle {
+  margin-bottom: 26px;
+  line-height: 22px;
+  max-width: 550px;
+  color: $c-text;
+}
+
+.button {
+  max-width: 210px;
+}
+
+.scores {
+  list-style-type: none;
+  flex-direction: row;
+  margin: 52px 0 0;
+  display: flex;
+  padding: 0;
+}
+
+li {
+  margin-right: 32px;
+
+  &:nth-child(2n) {
+    border-right: 1px solid $c-border-light-gray;
+    margin-right: 32px;
+  }
+}
+
+.value {
+  font-family: $ff-text;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.text {
+  font-family: $ff-text;
+  text-wrap: nowrap;
+  margin-top: 4px;
+  color: $c-text;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  top: 43px;
+  left: -100px;
+}
+
+.banner-image {
+  position: absolute;
+  right: -30px;
+  z-index: -1;
+}
+
+.shine-big {
+  position: absolute;
+  right: -20px;
+  top: 44px;
+}
+
+.shine-small {
+  position: absolute;
+  right: 534px;
+  width: 56px;
+  top: 254px;
+}
